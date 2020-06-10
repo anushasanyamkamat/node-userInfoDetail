@@ -1,19 +1,19 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
+
+
+app.use(cors());
 
 app.get('/', function(req, res){
     res.json({'title': 'Hello. World!'});
 })
 
 app.get('/user', function(req,res){
-    res.json({'name': 'Anusha Kamat',
-              'age': 28,
-              'address': 'Berlin'})
+    res.json({'user_name': 'Anusha Kamat',
+              'user_age': 28,
+              'user_address': 'Berlin'})
 })
-
-
-
-
 
 
 app.listen(3000, function(){
