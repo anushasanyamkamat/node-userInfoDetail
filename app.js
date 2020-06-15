@@ -24,6 +24,21 @@ app.get('/users', function(req,res){
                 'user_name': 'Sanyam',
                 'user_age': 31,
                 'user_address': 'Berlin'
+              },
+              {
+                'user_name': 'Ved',
+                'user_age': 10,
+                'user_address': 'Bangalore'
+              },
+              {
+                'user_name': 'John',
+                'user_age': 40,
+                'user_address': 'Mumbai'
+              },
+              {
+                'user_name': 'Surabhi',
+                'user_age': 27,
+                'user_address': 'Goa'
             }])
 })
 
